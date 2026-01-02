@@ -1,8 +1,0 @@
-com/Tawhidul/TGen.class
-META-INF/native-image/picocli-generated/com.Tawhidul/TGen/reflect-config.json
-com/Tawhidul/UseCommand.class
-META-INF/native-image/picocli-generated/com.Tawhidul/TGen/resource-config.json
-META-INF/native-image/picocli-generated/com.Tawhidul/TGen/proxy-config.json
-com/Tawhidul/ListCommand.class
-com/Tawhidul/AddCommand.class
-com/Tawhidul/RemoveCommand.class
