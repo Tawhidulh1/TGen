@@ -1,39 +1,5 @@
 [
   {
-    "name" : "com.Tawhidul.AddCommand",
-    "allDeclaredConstructors" : true,
-    "allPublicConstructors" : true,
-    "allDeclaredMethods" : true,
-    "allPublicMethods" : true,
-    "fields" : [
-      { "name" : "files" }
-    ]
-  },
-  {
-    "name" : "com.Tawhidul.ListCommand",
-    "allDeclaredConstructors" : true,
-    "allPublicConstructors" : true,
-    "allDeclaredMethods" : true,
-    "allPublicMethods" : true
-  },
-  {
-    "name" : "com.Tawhidul.RemoveCommand",
-    "allDeclaredConstructors" : true,
-    "allPublicConstructors" : true,
-    "allDeclaredMethods" : true,
-    "allPublicMethods" : true,
-    "fields" : [
-      { "name" : "files" }
-    ]
-  },
-  {
-    "name" : "com.Tawhidul.TGen",
-    "allDeclaredConstructors" : true,
-    "allPublicConstructors" : true,
-    "allDeclaredMethods" : true,
-    "allPublicMethods" : true
-  },
-  {
     "name" : "com.Tawhidul.UseCommand",
     "allDeclaredConstructors" : true,
     "allPublicConstructors" : true,
@@ -42,17 +8,6 @@
     "fields" : [
       { "name" : "outputs" },
       { "name" : "templates" }
-    ]
-  },
-  {
-    "name" : "picocli.CommandLine$AutoHelpMixin",
-    "allDeclaredConstructors" : true,
-    "allPublicConstructors" : true,
-    "allDeclaredMethods" : true,
-    "allPublicMethods" : true,
-    "fields" : [
-      { "name" : "helpRequested" },
-      { "name" : "versionRequested" }
     ]
   }
 ]

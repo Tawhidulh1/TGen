@@ -45,6 +45,10 @@ public class UseCommand implements Runnable {
       }
       Files.copy(templatePath.resolve(template.getName()), currentPath.resolve(file.getName()),
           StandardCopyOption.REPLACE_EXISTING);
+
+      File newFile = currentPath.resolve(file.getName()).toFile();
+      newFile = Utils.replaceKeyWordWithFileName(newFile, Constants.keywordReplaceByFileName);
+
       System.out.println("Using template: " + template.getName() + " to '" + file.getName() + "'");
     } catch (IOException e) {
       System.err.println("Failed to use template: " + template.getName());
