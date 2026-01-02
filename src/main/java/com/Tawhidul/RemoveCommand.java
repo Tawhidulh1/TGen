@@ -4,22 +4,28 @@ import java.io.File;
 import java.nio.file.Path;
 
 import picocli.CommandLine.Command;
-import picocli.CommandLine.Option;
+import picocli.CommandLine.Parameters;
 
-@Command(name = "remove", description = "Remove an existing template")
+@Command(name = "remove", aliases = { "rm", "r" }, description = "Remove an existing template")
 public class RemoveCommand implements Runnable {
-  @Option(names = { "-f", "--file" }, description = "template file to remove", required = true)
-  File file;
+
+  @Parameters(description = "template file to remove")
+  File[] files;
 
   @Override
   public void run() {
     Path templatePath = TGen.getTemplatesPath();
-    try {
-      File toRemove = templatePath.resolve(file.getName()).toFile();
-      toRemove.delete();
-    } catch (Exception e) {
-      System.out.println("Failed to remove template: " + file.getName());
-      e.printStackTrace();
+    for (File file : files) {
+      removeTemplate(templatePath, file);
     }
+  }
+
+  private void removeTemplate(Path path, File file) {
+    file = path.resolve(file.getName()).toFile();
+    if (file.exists() && file.delete()) {
+      System.out.println("Template removed: " + file.getName());
+      return;
+    }
+    System.err.println("Failed to remove template: '" + file.getName() + "'");
   }
 }

@@ -7,7 +7,7 @@ import picocli.CommandLine;
 import picocli.CommandLine.Command;
 
 @Command(name = "tgen", subcommands = { AddCommand.class, RemoveCommand.class, UseCommand.class,
-    ListCommand.class }, version = "tgen-1.0", mixinStandardHelpOptions = true, description = "template generation and management tool")
+    ListCommand.class }, version = "tgen-1.1", mixinStandardHelpOptions = true, description = "template generation and management tool")
 public class TGen {
 
   public static void main(String[] args) {
