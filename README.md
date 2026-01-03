@@ -7,6 +7,7 @@ I built this project to speed up the process of generating boilerplate code when
 
 Packaged with [jbang](https://github.com/jbangdev/jbang) and built with [picocli](https://github.com/remkop/picocli) written in java, this project was intended to be minimalistic and easy to use. Here is an example:
 
+(note: FILE_NAME should be TM_FILENAME_BASE, so tgen didn't replace it)
 ![Demo](https://github.com/user-attachments/assets/03d7b0f6-7981-4d77-bf26-2ea896d1f01f)
 
 ---
