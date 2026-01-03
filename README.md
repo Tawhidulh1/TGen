@@ -1,6 +1,10 @@
 # TGen
 ### A simple template generator/manager that stores files/templates for use with additional features.
 [![Release](https://img.shields.io/github/v/release/Tawhidulh1/TGen)](https://github.com/Tawhidulh1/TGen/releases)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-blue)](https://github.com/Tawhidulh1/TGen)
+[![GitHub issues](https://img.shields.io/github/issues/Tawhidulh1/TGen)](https://github.com/Tawhidulh1/TGen/issues)
+[![Contributors](https://img.shields.io/github/contributors/Tawhidulh1/TGen)](https://github.com/Tawhidulh1/TGen/graphs/contributors)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 --- 
 I built this project to speed up the process of generating boilerplate code when solving competitive programming problems that implement different methods to parse inputs. It can be useful in many other situations such as generating note template, project scaffolding, etc. Simply store your templates and use [TGen](https://github.com/Tawhidulh1/TGen) to generate files from those templates with ease.
